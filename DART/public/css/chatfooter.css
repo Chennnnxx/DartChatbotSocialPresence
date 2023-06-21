@@ -1,0 +1,47 @@
+.chatfooter {
+    min-height: 11rem;
+    width: 100%;
+    background: #2165AE;
+    position: fixed;
+    bottom: 0;
+    left: 0; 
+    display: block; 
+    z-index: 10000002; 
+  }
+
+.intrepid-img {
+    width: 250px;
+    float: left;
+    position: absolute;
+    left: 25px;
+    bottom: 0px;
+}
+
+.intrepid-name{
+    color: #fff;
+    text-align: left;
+    font-family: 'Itim', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-size: x-large;
+    display: flex;
+    margin-left: 300px;
+    margin-top: 5px;
+}
+
+.chatcontent{
+    color: #fff;
+    text-align: left;
+    font-family: 'Itim', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-size: x-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 300px;
+}
+
+p{
+    margin:5px
+}

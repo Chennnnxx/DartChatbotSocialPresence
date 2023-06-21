@@ -1,0 +1,11 @@
+.ui.one.column.centered.grid {
+  padding-top: 1em;
+}
+
+#removeHidden, #clickAllDotsWarning {
+  display: none;
+}
+
+.img.post img {
+  max-width: 100%;
+}

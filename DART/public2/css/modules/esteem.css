@@ -1,0 +1,9 @@
+/* used in trans script */
+
+.noLineBreak{
+  white-space: nowrap;
+}
+
+.customCircularAvatar {
+  object-fit: cover;
+}

@@ -1,0 +1,88 @@
+extends ../ui_layout
+
+block content
+  .ui.container.resultsAddBottomMargin
+    .ui.stackable.column.grid
+      .ui.column
+        .insertPrint
+        .ui.raised.segment.reflectionTopSegment
+          h3.ui.header
+            i.question.blue.icon
+            .content
+              | Reflect
+  
+          .ui.large.header(style="background-color: grey; color: white;")
+            img.ui.circular.image(src='/images/Intrepid_PT_Determined.png' style='margin: 25px')
+            | Chat with Intrepid
+
+          p#typing(style="text-align:center;") Intrepid is typing...
+          .content(style="background-color: #d3d3d3;")
+            .column
+              .ui.comments
+                .comment
+                  .avatar
+                    img(src='/images/Intrepid_PT_Determined.png')
+                  .content
+                    .author Intrepid
+                    .text 
+                    .ui.left.pointing.label#congrat
+                      p.ani_dot ......
+                
+              #reflect1.ui.comments(style="visibility: hidden")
+                .comment
+                  .avatar
+                    img(src='/images/Intrepid_PT_Determined.png')
+                  .content
+                    .author Intrepid
+                    .text 
+                    .ui.left.pointing.label#q1
+                      p.ani_dot ......  
+              #r1.rightdialog(style="visibility: hidden")
+                img.right.floated.mini.ui.image(src='/images/missing_photo.png')     
+                .ui.right.pointing.label#a1 
+                  p.ani_dot ......   
+              #feedback1.ui.comments(style="visibility: hidden")
+                .comment
+                  .avatar
+                    img(src='/images/Intrepid_PT_Determined.png')
+                  .content
+                    .author Intrepid
+                    .text 
+                    .ui.left.pointing.label#f1
+                      p.ani_dot ......
+  
+              #reflect2.ui.comments(style="visibility: hidden")
+                .comment
+                  .avatar
+                    img(src='/images/Intrepid_PT_Determined.png')
+                  .content
+                    .author Intrepid
+                    .text 
+                    .ui.left.pointing.label#q2
+                      p.ani_dot ......   
+              #r2.rightdialog(style="visibility: hidden")
+                img.right.floated.mini.ui.image(src='/images/missing_photo.png')     
+                .ui.right.pointing.label#a2 
+                  p.ani_dot ...... 
+              #feedback2.ui.comments(style="visibility: hidden")
+                .comment
+                  .avatar
+                    img(src='/images/Intrepid_PT_Determined.png')
+                  .content
+                    .author Intrepid
+                    .text 
+                    .ui.left.pointing.label#f2
+                      p.ani_dot ...... 
+            
+              .ui.form
+                .field
+                  .ui.fluid.action.input
+                    input(type='text' id="inputanswer" placeholder='Please input your answer...')
+                    .ui.blue.button#replybutton Reply
+block scripts
+  script(src="/module_js/base_start.js")
+  script(src="/module_js/trolls/trolls_reflect_a.js")
+
+block styles
+  link(rel='stylesheet', href='/css/start.css')
+    

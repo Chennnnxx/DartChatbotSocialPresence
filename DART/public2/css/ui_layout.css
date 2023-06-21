@@ -1,0 +1,945 @@
+@charset "utf-8";
+
+/* ---- GENERAL ---- */
+
+body {
+    background-color: #F5F8FA;
+    padding: 0em;
+}
+
+.hidden {
+    display: none;
+}
+
+.ui.hidden {
+    display: none;
+}
+
+.centerText {
+    text-align: center;
+}
+
+.computer.only.tablet.only.four.wide.column {
+    height: auto !important;
+}
+
+.grid.container.addBottomPaddingToGrid {
+    padding-bottom: 17rem;
+}
+
+.grayElement,
+.ui.container .grayElement {
+    color: #696969;
+}
+
+
+/* --- HEADER & FOOTER ---- */
+
+.ui.menu.testDriveHeader,
+.ui.menu.testDriveFooter {
+    z-index: 10000002;
+}
+
+
+/* --- POPUP  MODALS --- */
+
+
+/* Adjust popup modal margins and heights due to site header and footer */
+
+
+/* Mobile sizing */
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .ui.modals {
+        margin-top: 74px;
+        max-height: calc(100vh - 112px);
+    }
+}
+
+
+/* Tablet and up sizing  */
+
+@media only screen and (min-width: 768px) {
+    .ui.modals {
+        margin-top: 101px;
+        max-height: calc(100vh - 139px);
+    }
+}
+
+
+/* --- FEEDBACK MESSAGES --- */
+
+.ui.grid.feedbackMessagesGrid {
+    margin: 0 auto 0 auto;
+}
+
+.ui.grid.feedbackMessagesGrid .sticky {
+    margin-bottom: 60px;
+    width: 400px;
+    max-width: 100%;
+    z-index: 10000000;
+}
+
+
+/* ------- END PAGE ------- */
+
+.endPageButton {
+    max-width: 100%;
+    width: 260px;
+    text-align: left !important;
+}
+
+
+/* --- CURSOR APPEARANCES --- */
+
+a,
+button,
+.ui.button,
+#newpost.ui.fluid.left.labeled.right.icon.input {
+    cursor: pointer;
+}
+
+.ui.card .comments :not(.actions) {
+    cursor: default;
+}
+
+
+/* --- POST APPEARANCES --- */
+
+.img.post img {
+    max-width: 100%;
+}
+
+.ui.fluid.card>.content>.description {
+    font-size: 1.30em;
+}
+
+.locationtag {
+    color: #929292;
+}
+
+.grayText {
+    color: #929292;
+}
+
+.blueText {
+    color: #0000FF;
+}
+
+
+/* only for some digital literacy posts */
+
+.info_button {
+    border-radius: 14px;
+    border: 2px solid #cacacab0;
+    box-sizing: border-box;
+    color: #2185d0;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    z-index: 9;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+/* ---- INTROJS HINTS ---- */
+
+
+/* ----- (BLUE DOTS) ----- */
+
+.introjs-hint-dot {
+    background: #2185d0;
+    border: 13px solid rgba(146, 146, 146, .36);
+    -webkit-animation: introjspulse 2s ease-out;
+    -moz-animation: introjspulse 2s ease-out;
+    animation: introjspulse 2s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+.introjs-hint-pulse {
+    background: #2185d0;
+    width: 15px;
+    height: 15px;
+}
+
+
+/* ---- INTROJS STEPS ---- */
+
+
+/* ----- (TUTORIAL) ------ */
+
+
+/* removes a gray overlay that covers everything but the selected element */
+
+.introjs-overlay {
+    visibility: hidden;
+}
+
+
+/* the box highlighting the selected element */
+
+.introjs-helperLayer {
+    border: 1px solid rgba(0, 149, 255, .5);
+    box-shadow: 0 2px 20px rgba(0, 149, 255, .4);
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+/* custom tooltips that have a blue border */
+
+.blueTooltip {
+    border: 1px solid rgba(0, 149, 255, .5);
+    box-shadow: 0 2px 20px rgba(0, 149, 255, .4);
+}
+
+
+/* avoid editing this, fixes issues with content being hidden under things */
+
+
+/* brings the tooltip forward on z-axis */
+
+.introjs-tooltipReferenceLayer {
+    z-index: 10000005;
+    opacity: 0;
+}
+
+
+/* adjusts the tooltip text appearance */
+
+.introjs-tooltiptext {
+    line-height: 120%;
+    font-size: 135%;
+}
+
+.introjs-fixedTooltip {
+    position: absolute;
+}
+
+.introjs-fixParent {
+    position: static;
+}
+
+
+/* customizing the back, next, and done buttons on steps */
+
+
+/* -  -  -  -  - */
+
+.introjs-skipbutton.introjs-donebutton,
+.introjs-skipbutton.introjs-donebutton:hover {
+    height: 22px;
+    line-height: 22px !important;
+    visibility: visible;
+    float: right;
+    border-radius: 5px;
+    color: rgba(255, 255, 255, .9);
+    background-image: linear-gradient(#21ba45, #21ba45);
+    text-shadow: 0px 0px 0 #fff;
+    margin-left: 5px;
+    border: 0px solid #d4d4d4;
+    font: 16px sans-serif;
+}
+
+.introjs-button.introjs-nextbutton,
+.introjs-button.introjs-nextbutton:hover {
+    height: 22px;
+    line-height: 22px !important;
+    border-radius: 5px;
+    visibility: visible;
+    color: rgba(255, 255, 255, .9);
+    background-image: linear-gradient(#2185D0, #2185D0);
+    text-shadow: 0px 0px 0 #fff;
+    margin-left: 5px;
+    border: 0px solid #d4d4d4;
+    font: 16px sans-serif;
+}
+
+.introjs-button.introjs-prevbutton,
+.introjs-button.introjs-prevbutton:hover {
+    height: 22px;
+    line-height: 22px !important;
+    border-radius: 5px;
+    visibility: visible;
+    color: rgba(255, 255, 255, .9);
+    background-image: linear-gradient(#2185D0, #2185D0);
+    text-shadow: 0px 0px 0 #fff;
+    margin-left: 5px;
+    border: 0px solid #d4d4d4;
+    font: 16px sans-serif;
+}
+
+.introjs-button,
+.introjs-button:hover {
+    height: 22px;
+    line-height: 22px !important;
+    border-radius: 5px;
+    visibility: visible;
+    color: rgba(255, 255, 255, .9);
+    background-image: linear-gradient(#21ba45, #21ba45);
+    text-shadow: 0px 0px 0 #fff;
+    margin-left: 5px;
+    border: none;
+    font: 16px sans-serif;
+}
+
+.introjs-skipbutton {
+    visibility: hidden;
+}
+
+
+/* -  -  -  -  - */
+
+
+/* ----- OTHER ------ */
+
+
+/* gray out text*/
+
+.greyOut {
+    color: #A9A9A9
+}
+
+
+/* Button that uses the testdrive color palette */
+
+.ui.button.testDriveBlueButton {
+    background-color: #14a1f6;
+    color: white;
+}
+
+
+/* settings page sublabels (privacy module) */
+
+.settingSmallLabel {
+    font-weight: normal;
+    font-size: 65%;
+}
+
+.ui.footer {
+    /* Increased specificity for SO snippet priority */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+
+/* misc alignment classes */
+
+.ui.grid .addBottomMargin {
+    margin-bottom: 0;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}
+
+
+/* highlight on hover */
+
+.highlightOnHover {
+    color: black;
+    background-color: #FFFFA6;
+}
+
+.highlightOnHover:hover {
+    color: black;
+    background-color: #FFFF00;
+}
+
+
+/* most likely used in the habits module menus */
+
+.ui.vertical.menu a.item {
+    color: black;
+    background: rgba(0, 0, 0, .05);
+}
+
+.ui.vertical.menu a.item:hover {
+    color: black;
+    background: white;
+}
+
+.ui.vertical.menu a.item.active {
+    color: black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+    background: white;
+}
+
+.ui.vertical.menu a.item.active:hover {
+    color: black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+    background: white;
+}
+
+
+/* Enlarge text on hover */
+
+.bigTextOnHover {
+    color: black;
+    font-size: 100%;
+}
+
+.bigTextOnHover:hover {
+    color: black;
+    font-size: 125%;
+}
+
+
+/* --- POSSIBLY UNUSED? --- */
+
+.main.container {
+    margin-top: 5em;
+}
+
+.ui.menu .item img.logo {
+    margin-left: 3.5em;
+}
+
+.wireframe {
+    margin-top: 2em;
+}
+
+.image-upload img {
+    cursor: pointer;
+}
+
+.image-upload>input {
+    display: none;
+}
+
+#harmonyBox {
+    width: 545px;
+    height: 146px;
+    background-color: transparent;
+    z-index: 999999999;
+    position: absolute;
+    top: 265px;
+}
+
+#nextPage {
+    width: 150%;
+    margin-left: -132px;
+    margin-top: 20px;
+}
+
+#populated-data {
+    width: 240px;
+    height: 160px;
+    background-color: transparent;
+    /* background-color: rgba(0,0,128,0.2); */
+    z-index: 999999999;
+    position: absolute;
+    top: 395px;
+    left: 50px;
+}
+
+
+
+#tweets-number {
+    width: 220px;
+    height: 40px;
+    background-color: transparent;
+    z-index: 999999999;
+    position: absolute;
+    top: 320px;
+    left: 310px;
+}
+
+#opinions {
+    width: 400px;
+    height: 84px;
+    /* background-color: rgba(0,0,128,0.2); */
+    background-color: transparent;
+    z-index: 999999999;
+    position: absolute;
+    top: 450px;
+    left: 350px;
+}
+
+#reactions {
+    width: 175px;
+    height: 18px;
+    /* background-color: rgba(0,0,128,0.2); */
+    background-color: transparent;
+    z-index: 999999999;
+    position: absolute;
+    top: 540px;
+    left: 353px;
+}
+
+/* the character's page (after the request) in the practice pages */
+#harmony-page {
+    /* background-color: red !important; */
+    margin-top: 5px;
+    width: 150% !important;
+    margin-left: -132px;
+    background-color: #e7edf0;
+    display: none;
+}
+
+.elvisFixNav {
+    top: -64px !important;
+}
+
+#buttons-menu {
+    background-color: white;
+    height: 60px;
+    top: -15px;
+    z-index: 0;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+}
+
+
+
+#toploggedin {
+    background-color: white;
+}
+
+#round-pic-container{
+    position: absolute;
+    top: 130px;
+    left: 65px;
+    z-index: 10;
+    /* background-color: green; */
+    width: 170px;
+    height: 170px;
+}
+
+#pic-border {
+    box-sizing: border-box;
+    padding: 4px;
+    background-color: white;
+}
+
+#pic-border, #harmony-pic {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.bio {
+    /* background-color: red; */
+    width: 19.9vw !important;
+    margin-top: -2.2vh !important;
+    padding-top: 6vh !important;
+    padding-left: 8vh !important;
+    height: 33vh;
+    font-size: .9em;
+    /* background-color: pink; */
+}
+
+.elvisBio {
+    /* background-color: green !important; */
+    margin-top: -9.8vh !important;
+    z-index: 0;
+}
+
+#userName {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#profileAt {
+    font-weight: lighter;
+    color: #8196ad;
+}
+
+#userAbout {
+    padding-top: 1vh;
+    font-weight: normal;
+}
+
+.hashtags {
+    color: #21a6f2;
+}
+
+.userDetails {
+    font-weight: lighter;
+    color: #8196ad;
+    padding-top: 0.75vh;
+}
+
+.navbar {
+    /* background-color: rebeccapurple; */
+    font-size: 3em;
+    display: inline;
+    display:inline-block;
+    float:left;
+    padding:5px;
+}
+
+#twitterNav {
+    /* margin-right: 15vw; */
+    position: absolute;
+    text-align: center;
+    /* top: 36vh;
+    right: 15vw; */
+    top: 263px;
+    right: 250px;
+    /* background-color: rebeccapurple; */
+
+}
+
+/* .ElvisWhiteFix {
+    background-color: pink !important;
+} */
+
+#twitterNav .active {
+    color: #21a6f2 !important;
+}
+
+#followingbutton {
+    border-radius: 18px;
+    height: 40px;
+    margin-left: 100px;
+    width: 100px;
+    position: absolute;
+    top: 280px;
+    right: 40px;
+    z-index: 0;
+}
+
+#followingbuttonChris {
+    border-radius: 18px;
+    height: 40px;
+    margin-left: 100px;
+    width: 100px;
+    position: absolute;
+    top: 3px;
+    right: 200px;
+    z-index: 99999;
+}
+
+/* Stop intro js from moving underlying element positioning */
+/* .introjs-relativePosition {
+    position: initial;
+} */
+
+#actionsOverlay {
+    position: absolute;
+    /* background-color: green; */
+    height: 25px;
+    width: 172px;
+    top: 190px;
+    right: 245px;
+}
+
+#react {
+    /* background-color: red !important; */
+    height: 40px;
+    width: 175px;
+}
+
+#feed {
+    background-color: white;
+    width: 465px;
+    height: 225px;
+    position: absolute;
+    top:340px;
+    right:40px;
+}
+
+#chrisFeed  {
+    background-color: white;
+    width: 465px;
+    height: 440px;
+    position: absolute;
+    top:340px;
+    right:40px;
+}
+
+.chrisPage {
+    /* background-color: blue !important; */
+    padding-bottom: 220px !important;
+}
+
+hr {
+    height: 1px;
+    /* background-color: rgb(213, 14, 14); */
+    background-color: #e0e4e8;
+    /* background-color: #e1e6ea; */
+    border: none !important;
+}
+
+.feed-nav {
+    color: black;
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: 10px;
+    margin-left: 12px;
+}
+
+.feed-nav span{
+    color: #21a6f2;
+}
+
+
+/* Remove done button so that we can force them to click decline instead 
+.introjs-donebutton {
+    pointer-events: none !important; 
+    display: none !important; 
+}
+
+.extra #decline:active {
+    background-color: #dc2c2c !important;
+    color: #fff !important;
+}
+
+.extra #decline:focus {
+    background-color: #dc2c2c !important;
+    color: #fff !important;
+}
+
+.extra #decline:visited {
+    background-color: darkred !important;
+    color: #fff !important;
+}
+
+#followingbutton:focus {
+    background-color: darkred !important;
+    color: #fff !important;
+} 
+
+
+#accept:active {
+    background-color: #24bc44 !important;
+    color: #fff !important;
+}
+
+#accept:focus {
+    background-color: #24bc44 !important;
+    color: #fff !important;
+} */
+
+#tweet-2 span {
+    color: #21a6f2;
+    font-weight: lighter;
+} 
+
+/* fix spacing between like, reshare, and comment buttons and labels */
+.firstAction {
+    margin-left: -20px !important;
+}
+
+#actions {
+    margin-left: -50px !important;
+    /* background-color: blue; */
+    position: absolute;
+    left: 0px;
+}
+
+#feedPinned {
+    /* background-color: rgb(208, 255, 208); */
+    height: 150px;
+    width: 380px;
+    margin-left: 50px;
+    margin-top: -2px;
+    font-size: .8em;
+}
+
+#feedPinned img {
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    top: 65px;
+    left: 10px;
+}
+
+#feedPinned p {
+    margin-bottom: -1px;
+}
+
+#feedPinned span {
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+#feedPinned span span{
+    font-weight: lighter;
+}
+
+/* Chris feed */
+#chrisFeedPinned {
+    /* background-color: rgb(208, 255, 208);
+    height: 300px; */
+    width: 380px;
+    margin-left: 50px;
+    margin-top: -2px;
+    font-size: .8em;
+}
+
+#chrisFeedPinned #chrisFeedPic {
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    top: 65px;
+    left: 10px;
+    border-radius: 50%;
+}
+
+#chrisFeedPinned p {
+    margin-bottom: -1px;
+}
+
+#chrisFeedPinned span {
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+#chrisFeedPinned span span{
+    font-weight: lighter;
+}
+
+
+#feedName {
+    font-weight: bolder !important;
+    font-size: 1.1em !important;
+}
+
+#feedName span {
+    color: #8196ad;
+    font-size: 0.9em;
+}
+
+#feedPinned p {
+    font-weight: lighter;
+    font-size: 0.9em;
+    color: #8196ad;
+}
+
+#actions .ui.button {
+    width: 30px;
+    margin-left: 50px;
+    background-color: transparent !important;
+    outline: none;
+}
+
+#actions a.ui.basic.label{
+    border: none;
+    font-weight: bold;
+    font-size: x-small !important;
+    margin-left: -10px !important;
+}
+
+#postButtons {
+    /* background-color: red !important; */
+    width: 57%;
+    margin-left: -10px;
+}
+
+.postIconBox {
+    background-color: transparent !important;
+    /* width: 20px; */
+    padding-left: 15px !important;
+    padding-right: 4px !important;
+    font-size: small !important;
+}
+
+/* #postButtons a.ui.basic.label{
+    border: none;
+    font-weight: bold;
+    font-size: x-small !important;
+    padding-left: 5 !important;
+    padding-right: 5 !important;
+} */
+
+#postButtons a.ui.basic.label{
+    background-color: transparent !important;
+    border: none;
+    font-weight: bold;
+    font-size: small !important;
+    padding-left: 0 !important;
+    padding-right: 5 !important;
+    pointer-events: none;
+}
+
+
+
+a.ui.basic.label#fixspace {
+    /* background-color: blue; */
+}
+
+i.map.pin.icon {
+    color: #21a6f2;
+    margin-left: -18px !important;
+}
+
+#pinned {
+    color: #8196ad;
+    font-weight: lighter !important;
+}
+
+
+
+a.item {
+    font-weight: bold !important;
+    color: #6e7686 !important;
+}
+
+
+#FollowersMenu {
+    background-color: white !important;
+    width: 500px;
+    padding-bottom: 15px !important;
+    z-index: 999999999 !important;
+}
+
+.exitButton {
+    background-color: white;
+    border: none;
+    margin-top: 1px;
+    /* margin-right: 1px; */
+}
+
+.followerHeader {
+    margin-top: 15px !important;
+}
+
+.followListBtn {
+    margin-right: 15px;
+}
+
+.item .ui.tiny.image {
+    margin-left: 15px;
+}
+
+.padBottom {
+    padding-bottom: 30px !important;
+}
+
+.padTop {
+    margin-top: -10px !important;
+}
+#step1 {
+    display: block;
+}
+
+a#step3:active {
+    opacity: 0.5;
+}
+
+.elvisFixPadding {
+    margin-top: unset;
+    margin-top: 8px !important;
+}
+
+/* #numFollowers {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+} */

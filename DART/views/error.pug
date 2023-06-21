@@ -1,0 +1,6 @@
+extends ui_layout
+
+block content
+  h1= error.status + " Error"
+  h1= message
+  pre #{error.stack}

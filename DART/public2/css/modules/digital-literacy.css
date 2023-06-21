@@ -1,0 +1,21 @@
+/* Post appearances */
+
+.ui.card .description,
+.ui.card .img.post,
+.newsArticleTitleContainer {
+  cursor: pointer;
+}
+
+.ui.card .newsArticleTitleContainer {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.info_button {
+  z-index: 9;
+  text-align: center;
+  align-self: flex-end;
+  position: relative;
+  bottom: 10px;
+  width: 7%;
+  height: auto;
+}

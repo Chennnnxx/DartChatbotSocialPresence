@@ -1,0 +1,14 @@
+/* phishing popups in sim & script */
+
+.ui.modal .ui.form {
+  margin-top: 1em;
+}
+
+.ui.modal .setBigText {
+  margin-top: 1em;
+  font-size: 200%;
+}
+
+.setRed {
+  color: red;
+}
