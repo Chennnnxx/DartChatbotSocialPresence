@@ -11,9 +11,8 @@ document.addEventListener('DOMContentLoaded', function() {
             q1.innerHTML="Why is it important to be cautious when accepting friend requests from unfamiliar accounts？";
             document.getElementById("typing").innerText="Please input your answer";
             document.getElementById("r1").style.visibility="visible"; 
-        },8400); 
-          
-    },10000);
+        },300*14);      
+    },300*18);
  }, false);
 
 
@@ -35,7 +34,7 @@ button.onclick=function(){
             const rf2 = document.getElementById("reflect2");
             fb1.style.visibility = "visible";
             fb_length = feedback[0].split(' ').length;
-            fb_time = 600*fb_length;
+            fb_time = 300*fb_length;
             setTimeout(()=>{
                 document.getElementById("f1").innerHTML="Your explanation regarding the caution needed when accepting friend requests from unfamiliar accounts is spot on.";
                 rf2.style.visibility = "visible";
@@ -43,7 +42,7 @@ button.onclick=function(){
                     document.getElementById("q2").innerHTML="What steps can you take to protect yourself from trolls and maintain a safe online environment?";
                     document.getElementById("typing").innerText="Please input your answer";
                     document.getElementById("r2").style.visibility="visible";
-                    }, 9600);    
+                    }, 300*16);    
             },fb_time); 
         }
         
@@ -57,17 +56,18 @@ button.onclick=function(){
             document.getElementById("feedback2").style.visibility = "visible";
             const fb2 = document.getElementById("f2");
             fb_length = feedback[1].split(' ').length;
-            fb_time = 600*fb_length;
+            fb_time = 300*fb_length;
             setTimeout(()=>{
-                document.getElementById("typing").innerText="Waiting for jumping";
+                document.getElementById("typing").innerText="Waiting for jumping...";
                 var url = new URL("https://lehigh.co1.qualtrics.com/jfe/form/SV_0wBxGu55Or4xQLY")
                 url.searchParams.append('r1', answerList[0]);
                 url.searchParams.append('r2', answerList[1]);
+                url.searchParams.append('cond', "n");
                 fb2.innerHTML = "You've emphasized the need to protect oneself from trolls and foster a safe online environment. Consider expanding on this point.";
-                button.disabled = true; // ? doesn't work
+                button.disabled = true;
                 setTimeout(()=>{
                     window.location.href=url.toString();
-                    }, 5000);
+                    }, 12000);
                 },fb_time);
             }
         }
