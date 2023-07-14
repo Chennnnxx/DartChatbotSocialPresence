@@ -1,4 +1,4 @@
-$(window).on('load', function() {
+/* $(window).on('load', function() {
   // Update the image and the title on the card
   const cdn = "https://dhpd030vnpk29.cloudfront.net/";
   const moduleName = pathArray[2];
@@ -10,5 +10,5 @@ $(window).on('load', function() {
   $("#learn, #practice, #explore, #reflect").on('click', function() {
       $(this).transition('tada');
   });
-});
+}); */
 

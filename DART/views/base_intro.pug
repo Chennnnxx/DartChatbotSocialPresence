@@ -54,28 +54,6 @@ block content
 block scripts
   script(src="/module_js/base_intro.js")
 
-  script.
-    function getQueryVariable(variable){
-      var query = window.location.search.substring(1));
-      var vars = query.split("&");
-      for (var i = 0; i < vars.length; i++) {
-        var pair = vars[i].split("=");
-        if (pair[0] == variable) {
-          return pair[1];
-        }
-      }
-      return null;
-    }  
-
-    function getNewURL(){
-      var condition = getQueryVariable("c");
-      var id = getQueryVariable("u");
-      var newURL = "/start_"+ condition + "/trolls/?u=" + id;
-      console.log(newURL);
-
-      return newURL;
-    }
-
   
 block styles
   link(rel='stylesheet', href='/css/intro.css')  
